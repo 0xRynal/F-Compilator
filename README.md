@@ -40,15 +40,7 @@ result
 
 ## Image de preview
 
-Une image type « terminal » (`preview.png`) peut être générée à partir de la page `docs/preview.html` :
-
-```bash
-cd scripts
-npm install
-npm run preview
-```
-
-Le script utilise Puppeteer pour ouvrir la page et enregistrer une capture dans `preview.png` à la racine du repo. Tu peux aussi ouvrir `docs/preview.html` dans un navigateur et faire une capture d’écran manuelle.
+Ouvre `docs/preview.html` dans un navigateur et fais une capture d’écran pour obtenir une image type terminal (ou utilise `preview.png` déjà fournie).
 
 ## Tests
 
