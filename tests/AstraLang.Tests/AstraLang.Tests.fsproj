@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.14.1" />
+    <PackageReference Include="xunit" Version="2.9.3" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="3.1.4" />
+    <PackageReference Include="coverlet.collector" Version="6.0.4" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\AstraLang.Core\AstraLang.Core.fsproj" />
+    <ProjectReference Include="..\..\src\AstraLang.TypeInference\AstraLang.TypeInference.fsproj" />
+    <ProjectReference Include="..\..\src\AstraLang.VM\AstraLang.VM.fsproj" />
+    <ProjectReference Include="..\..\src\AstraLang.Runtime\AstraLang.Runtime.fsproj" />
+    <ProjectReference Include="..\..\src\AstraLang.Lexer\AstraLang.Lexer.fsproj" />
+    <ProjectReference Include="..\..\src\AstraLang.Parser\AstraLang.Parser.fsproj" />
+    <ProjectReference Include="..\..\src\AstraLang.Compiler\AstraLang.Compiler.fsproj" />
+    <ProjectReference Include="..\..\src\AstraLang.IR\AstraLang.IR.fsproj" />
+    <ProjectReference Include="..\..\src\AstraLang.Optimizer\AstraLang.Optimizer.fsproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,21 @@
+# Build
+bin/
+obj/
+*.user
+*.suo
+*.cache
+
+# Node (scripts/preview)
+scripts/node_modules/
+npm-debug.log*
+
+# IDE / OS
+.vs/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Output
+*.log
+*.tmp

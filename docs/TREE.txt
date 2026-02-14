@@ -1,0 +1,73 @@
+Compilateur-F#/
+├── AstraLang.sln
+├── docs/
+│   ├── PLAN.md
+│   ├── ARCHITECTURE.md
+│   └── TREE.txt
+├── src/
+│   ├── AstraLang.Core/
+│   │   ├── AstraLang.Core.fsproj
+│   │   ├── Source.fs          # SourceSpan, Position
+│   │   ├── Token.fs           # Token (lexer output)
+│   │   ├── Ast.fs             # Untyped AST
+│   │   ├── Types.fs           # Type, TypeVar, TypeScheme
+│   │   ├── TypedAst.fs        # Typed AST
+│   │   ├── Ir.fs              # IR definitions (ANF, closures)
+│   │   └── Bytecode.fs        # Instruction, Program
+│   │
+│   ├── AstraLang.Lexer/
+│   │   ├── AstraLang.Lexer.fsproj
+│   │   └── Lexer.fs
+│   │
+│   ├── AstraLang.Parser/
+│   │   ├── AstraLang.Parser.fsproj
+│   │   └── Parser.fs
+│   │
+│   ├── AstraLang.TypeInference/
+│   │   ├── AstraLang.TypeInference.fsproj
+│   │   ├── Unification.fs
+│   │   ├── TypeEnv.fs
+│   │   └── Infer.fs           # Algorithm W
+│   │
+│   ├── AstraLang.IR/
+│   │   ├── AstraLang.IR.fsproj
+│   │   ├── Anf.fs             # A-normal form
+│   │   ├── ToIr.fs            # TypedAst → IR (lambda lift, etc.)
+│   │   └── ClosureConversion.fs
+│   │
+│   ├── AstraLang.Optimizer/
+│   │   ├── AstraLang.Optimizer.fsproj
+│   │   └── Optimizer.fs
+│   │
+│   ├── AstraLang.Compiler/
+│   │   ├── AstraLang.Compiler.fsproj
+│   │   └── CodeGen.fs         # IR → Bytecode
+│   │
+│   ├── AstraLang.Runtime/
+│   │   ├── AstraLang.Runtime.fsproj
+│   │   ├── Value.fs
+│   │   ├── Heap.fs
+│   │   └── Gc.fs              # Mark-and-sweep
+│   │
+│   ├── AstraLang.VM/
+│   │   ├── AstraLang.VM.fsproj
+│   │   └── Machine.fs
+│   │
+│   └── AstraLang.CLI/
+│       ├── AstraLang.CLI.fsproj
+│       └── Program.fs         # Main, REPL, flags
+│
+├── tests/
+│   ├── AstraLang.Tests/          # F# (unification, inférence, VM)
+│   │   ├── AstraLang.Tests.fsproj
+│   │   ├── UnificationTests.fs
+│   │   ├── TypeInferenceTests.fs
+│   │   └── VMTests.fs
+│   └── AstraLang.Tests.CSharp/   # C# (unification, exécutés par xUnit)
+│       ├── AstraLang.Tests.CSharp.csproj
+│       └── UnificationTests.cs
+│
+├── examples/
+│   └── example.astra
+│
+└── README.md

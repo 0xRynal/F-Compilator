@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <RootNamespace>AstraLang.CLI</RootNamespace>
+    <StartupObject>AstraLang.CLI.Program</StartupObject>
+    <NoWarn>988</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AstraLang.Core\AstraLang.Core.fsproj" />
+    <ProjectReference Include="..\AstraLang.Lexer\AstraLang.Lexer.fsproj" />
+    <ProjectReference Include="..\AstraLang.Parser\AstraLang.Parser.fsproj" />
+    <ProjectReference Include="..\AstraLang.TypeInference\AstraLang.TypeInference.fsproj" />
+    <ProjectReference Include="..\AstraLang.IR\AstraLang.IR.fsproj" />
+    <ProjectReference Include="..\AstraLang.Optimizer\AstraLang.Optimizer.fsproj" />
+    <ProjectReference Include="..\AstraLang.Compiler\AstraLang.Compiler.fsproj" />
+    <ProjectReference Include="..\AstraLang.VM\AstraLang.VM.fsproj" />
+  </ItemGroup>
+</Project>

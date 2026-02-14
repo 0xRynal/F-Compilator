@@ -1,0 +1,5 @@
+let id = fun x -> x
+let compose = fun f g x -> f (g x)
+let square = fun x -> x * x
+let result = compose square id 5
+result

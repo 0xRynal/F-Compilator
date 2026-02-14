@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AstraLang — Preview</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'JetBrains Mono', 'Consolas', monospace;
+      font-size: 15px;
+      line-height: 1.55;
+      background: #0d1117;
+      color: #e6edf3;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+    .frame {
+      width: 100%;
+      max-width: 720px;
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+    }
+    .titlebar {
+      background: #21262d;
+      padding: 10px 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      border-bottom: 1px solid #30363d;
+    }
+    .dot { width: 12px; height: 12px; border-radius: 50%; }
+    .dot.r { background: #ff5f56; }
+    .dot.y { background: #ffbd2e; }
+    .dot.g { background: #27c93f; }
+    .titlebar span { color: #8b949e; font-size: 13px; margin-left: 8px; }
+    .terminal {
+      padding: 20px 24px 24px;
+    }
+    .prompt { color: #7ee787; margin-bottom: 6px; }
+    .prompt .path { color: #79c0ff; }
+    .cmd { color: #e6edf3; margin-bottom: 16px; word-break: break-all; }
+    .code {
+      background: #0d1117;
+      border: 1px solid #30363d;
+      border-radius: 8px;
+      padding: 14px 18px;
+      margin-bottom: 14px;
+      color: #c9d1d9;
+    }
+    .code .keyword { color: #ff7b72; }
+    .code .id { color: #79c0ff; }
+    .code .op { color: #ff7b72; }
+    .code .num { color: #a5d6ff; }
+    .out { color: #7ee787; }
+    .out .value { color: #a5d6ff; font-weight: 600; }
+    .sub { color: #8b949e; font-size: 13px; margin-top: 16px; }
+  </style>
+</head>
+<body>
+  <div class="frame">
+    <div class="titlebar">
+      <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+      <span>AstraLang — Compilateur fonctionnel F#</span>
+    </div>
+    <div class="terminal">
+      <div class="prompt"><span class="path">~/Compilateur-F#</span> $</div>
+      <div class="cmd">dotnet run --project src/AstraLang.CLI -- examples/example.astra</div>
+      <div class="code">
+        <span class="keyword">let</span> <span class="id">id</span> = <span class="keyword">fun</span> <span class="id">x</span> -&gt; <span class="id">x</span><br/>
+        <span class="keyword">let</span> <span class="id">compose</span> = <span class="keyword">fun</span> <span class="id">f</span> <span class="id">g</span> <span class="id">x</span> -&gt; <span class="id">f</span> (<span class="id">g</span> <span class="id">x</span>)<br/>
+        <span class="keyword">let</span> <span class="id">square</span> = <span class="keyword">fun</span> <span class="id">x</span> -&gt; <span class="id">x</span> <span class="op">*</span> <span class="id">x</span><br/>
+        <span class="keyword">let</span> <span class="id">result</span> = <span class="id">compose</span> <span class="id">square</span> <span class="id">id</span> <span class="num">5</span><br/>
+        <span class="id">result</span>
+      </div>
+      <div class="out">Output: <span class="value">25</span></div>
+      <div class="sub">Hindley–Milner · IR · Bytecode · VM · GC</div>
+    </div>
+  </div>
+</body>
+</html>

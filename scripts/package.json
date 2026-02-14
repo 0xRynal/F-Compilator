@@ -1,0 +1,11 @@
+{
+  "name": "astralang-preview",
+  "private": true,
+  "description": "Generate preview image for AstraLang (Puppeteer)",
+  "scripts": {
+    "preview": "node generate-preview.mjs"
+  },
+  "devDependencies": {
+    "puppeteer": "^23.0.0"
+  }
+}

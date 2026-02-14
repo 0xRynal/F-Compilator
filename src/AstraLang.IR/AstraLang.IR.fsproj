@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <RootNamespace>AstraLang.IR</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Anf.fs" />
+    <Compile Include="ClosureConversion.fs" />
+    <Compile Include="ToIr.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AstraLang.Core\AstraLang.Core.fsproj" />
+    <ProjectReference Include="..\AstraLang.TypeInference\AstraLang.TypeInference.fsproj" />
+  </ItemGroup>
+</Project>

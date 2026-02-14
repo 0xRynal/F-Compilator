@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <RootNamespace>AstraLang.TypeInference</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Unification.fs" />
+    <Compile Include="TypeEnv.fs" />
+    <Compile Include="Infer.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AstraLang.Core\AstraLang.Core.fsproj" />
+    <ProjectReference Include="..\AstraLang.Parser\AstraLang.Parser.fsproj" />
+  </ItemGroup>
+</Project>

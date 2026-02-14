@@ -1,0 +1,59 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+Project("{6EC3EE1D-3C4E-46D3-86F9-50488B33EB8A}") = "AstraLang.Core", "src\AstraLang.Core\AstraLang.Core.fsproj", "{A1B2C3D4-1111-4000-8000-000000000001}"
+EndProject
+Project("{6EC3EE1D-3C4E-46D3-86F9-50488B33EB8A}") = "AstraLang.Lexer", "src\AstraLang.Lexer\AstraLang.Lexer.fsproj", "{A1B2C3D4-2222-4000-8000-000000000002}"
+EndProject
+Project("{6EC3EE1D-3C4E-46D3-86F9-50488B33EB8A}") = "AstraLang.Parser", "src\AstraLang.Parser\AstraLang.Parser.fsproj", "{A1B2C3D4-3333-4000-8000-000000000003}"
+EndProject
+Project("{6EC3EE1D-3C4E-46D3-86F9-50488B33EB8A}") = "AstraLang.TypeInference", "src\AstraLang.TypeInference\AstraLang.TypeInference.fsproj", "{A1B2C3D4-4444-4000-8000-000000000004}"
+EndProject
+Project("{6EC3EE1D-3C4E-46D3-86F9-50488B33EB8A}") = "AstraLang.IR", "src\AstraLang.IR\AstraLang.IR.fsproj", "{A1B2C3D4-5555-4000-8000-000000000005}"
+EndProject
+Project("{6EC3EE1D-3C4E-46D3-86F9-50488B33EB8A}") = "AstraLang.Optimizer", "src\AstraLang.Optimizer\AstraLang.Optimizer.fsproj", "{A1B2C3D4-6666-4000-8000-000000000006}"
+EndProject
+Project("{6EC3EE1D-3C4E-46D3-86F9-50488B33EB8A}") = "AstraLang.Compiler", "src\AstraLang.Compiler\AstraLang.Compiler.fsproj", "{A1B2C3D4-7777-4000-8000-000000000007}"
+EndProject
+Project("{6EC3EE1D-3C4E-46D3-86F9-50488B33EB8A}") = "AstraLang.Runtime", "src\AstraLang.Runtime\AstraLang.Runtime.fsproj", "{A1B2C3D4-8888-4000-8000-000000000008}"
+EndProject
+Project("{6EC3EE1D-3C4E-46D3-86F9-50488B33EB8A}") = "AstraLang.VM", "src\AstraLang.VM\AstraLang.VM.fsproj", "{A1B2C3D4-9999-4000-8000-000000000009}"
+EndProject
+Project("{6EC3EE1D-3C4E-46D3-86F9-50488B33EB8A}") = "AstraLang.CLI", "src\AstraLang.CLI\AstraLang.CLI.fsproj", "{A1B2C3D4-AAAA-4000-8000-00000000000A}"
+EndProject
+Project("{6EC3EE1D-3C4E-46D3-86F9-50488B33EB8A}") = "AstraLang.Tests", "tests\AstraLang.Tests\AstraLang.Tests.fsproj", "{A1B2C3D4-BBBB-4000-8000-00000000000B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AstraLang.Tests.CSharp", "tests\AstraLang.Tests.CSharp\AstraLang.Tests.CSharp.csproj", "{A1B2C3D4-CCCC-4000-8000-00000000000C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A1B2C3D4-1111-4000-8000-000000000001}.Debug|Any CPU = Debug|Any CPU
+		{A1B2C3D4-1111-4000-8000-000000000001}.Release|Any CPU = Release|Any CPU
+		{A1B2C3D4-2222-4000-8000-000000000002}.Debug|Any CPU = Debug|Any CPU
+		{A1B2C3D4-2222-4000-8000-000000000002}.Release|Any CPU = Release|Any CPU
+		{A1B2C3D4-3333-4000-8000-000000000003}.Debug|Any CPU = Debug|Any CPU
+		{A1B2C3D4-3333-4000-8000-000000000003}.Release|Any CPU = Release|Any CPU
+		{A1B2C3D4-4444-4000-8000-000000000004}.Debug|Any CPU = Debug|Any CPU
+		{A1B2C3D4-4444-4000-8000-000000000004}.Release|Any CPU = Release|Any CPU
+		{A1B2C3D4-5555-4000-8000-000000000005}.Debug|Any CPU = Debug|Any CPU
+		{A1B2C3D4-5555-4000-8000-000000000005}.Release|Any CPU = Release|Any CPU
+		{A1B2C3D4-6666-4000-8000-000000000006}.Debug|Any CPU = Debug|Any CPU
+		{A1B2C3D4-6666-4000-8000-000000000006}.Release|Any CPU = Release|Any CPU
+		{A1B2C3D4-7777-4000-8000-000000000007}.Debug|Any CPU = Debug|Any CPU
+		{A1B2C3D4-7777-4000-8000-000000000007}.Release|Any CPU = Release|Any CPU
+		{A1B2C3D4-8888-4000-8000-000000000008}.Debug|Any CPU = Debug|Any CPU
+		{A1B2C3D4-8888-4000-8000-000000000008}.Release|Any CPU = Release|Any CPU
+		{A1B2C3D4-9999-4000-8000-000000000009}.Debug|Any CPU = Debug|Any CPU
+		{A1B2C3D4-9999-4000-8000-000000000009}.Release|Any CPU = Release|Any CPU
+		{A1B2C3D4-AAAA-4000-8000-00000000000A}.Debug|Any CPU = Debug|Any CPU
+		{A1B2C3D4-AAAA-4000-8000-00000000000A}.Release|Any CPU = Release|Any CPU
+		{A1B2C3D4-BBBB-4000-8000-00000000000B}.Debug|Any CPU = Debug|Any CPU
+		{A1B2C3D4-BBBB-4000-8000-00000000000B}.Release|Any CPU = Release|Any CPU
+		{A1B2C3D4-CCCC-4000-8000-00000000000C}.Debug|Any CPU = Debug|Any CPU
+		{A1B2C3D4-CCCC-4000-8000-00000000000C}.Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+EndGlobal
