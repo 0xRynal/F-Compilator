@@ -38,10 +38,6 @@ let result = compose square id 5
 result
 ```
 
-## Image de preview
-
-Ouvre `docs/preview.html` dans un navigateur et fais une capture d’écran pour obtenir une image type terminal (ou utilise `preview.png` déjà fournie).
-
 ## Tests
 
 ```bash
